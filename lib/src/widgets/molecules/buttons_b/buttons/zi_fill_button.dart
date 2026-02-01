@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zi_core/src/zi_core_io.dart';
 
-import 'zi_btn_style.dart';
-
 // TODO: @Deprecated("ZiFillButton")
 class ZiFillButton extends StatelessWidget {
   final String label;

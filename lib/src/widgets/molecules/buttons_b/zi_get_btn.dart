@@ -1,11 +1,5 @@
-import 'package:zi_core/src/zi_core_io.dart';
-import 'variations/zi_button_secondary.dart';
-import 'variations/zi_button_outline.dart';
-import 'variations/zi_button_primary.dart';
-import 'variations/zi_button_chip.dart';
-import 'variations/zi_button_icon.dart';
-import 'variations/zi_button_text.dart';
 import 'package:flutter/material.dart';
+import 'package:zi_core/src/zi_core_io.dart';
 
 enum ZiButtonVariantB {
   primary,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum ZiGradientDirection { leftToRight, topToBottom }
+enum ZiGradientDirectionB { leftToRight, topToBottom }
 
 class ZiButtonStyleB {
   final bool expand;
@@ -21,7 +21,7 @@ class ZiButtonStyleB {
   final double? iconSize;
 
   final List<Color>? gradientColors;
-  final ZiGradientDirection? gradientDirection;
+  final ZiGradientDirectionB? gradientDirection;
 
   const ZiButtonStyleB({
     this.expand = false,

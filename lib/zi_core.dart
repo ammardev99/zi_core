@@ -1,5 +1,8 @@
 library;
 
+// Meta Layer
+export './src/doc/zi_core_meta.dart';
+
 // Theme Layer
 export './src/theme/zi_theme_io.dart';
 
