@@ -8,3 +8,4 @@ export './zi_shadows.dart';
 export './zi_spacing.dart';
 export 'zi_typography.dart';
 export './zi_sizes.dart';
+export './zi_motion.dart';
