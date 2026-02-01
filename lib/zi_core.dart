@@ -1,4 +1,4 @@
-library zi_core;
+library;
 
 // Meta Layer
 export './src/doc/zi_core_meta.dart';

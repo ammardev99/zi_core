@@ -11,14 +11,8 @@
 // This file should remain stable.
 
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import '../../../zi_core_io.dart';
-import 'zi_get_input_type.dart';
-import 'zi_input_layout.dart';
-import 'zi_input_style.dart';
-import 'zi_input_style_variant.dart';
-import 'zi_input_type.dart';
 
 class ZiInput extends StatefulWidget {
   final String? label;
@@ -72,10 +66,9 @@ class _ZiInputState extends State<ZiInput> {
   @override
   Widget build(BuildContext context) {
     final typeConfig = ziResolveInputType(widget.type);
-    final style =
-        widget.style == const ZiInputStyle()
-            ? ZiInputStyle.system
-            : widget.style;
+    final style = widget.style == const ZiInputStyle()
+        ? ZiInputStyle.system
+        : widget.style;
 
     final decoration = ZiInputStyleVariant.build(
       variant: widget.variant,

@@ -6,9 +6,8 @@
 // No layout logic here.
 
 import 'package:flutter/material.dart';
+
 import '../../../zi_core_io.dart';
-import 'zi_input_style.dart';
-import 'zi_input_type.dart';
 
 class ZiInputStyleVariant {
   static InputDecoration build({

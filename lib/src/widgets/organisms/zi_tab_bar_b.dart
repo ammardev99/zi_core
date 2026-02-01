@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../theme/zi_theme_io.dart';
 
-class ZiTabBar extends StatelessWidget {
+class ZiTabBarB extends StatelessWidget {
   final List<Tab> tabs;
   final TabController? controller;
 
-  const ZiTabBar({super.key, required this.tabs, this.controller});
+  const ZiTabBarB({super.key, required this.tabs, this.controller});
 
   @override
   Widget build(BuildContext context) {

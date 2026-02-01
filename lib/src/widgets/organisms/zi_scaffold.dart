@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../theme/zi_theme_io.dart';
+import '../../../zi_core.dart';
 
 class ZiScaffold extends StatelessWidget {
   final String? title;

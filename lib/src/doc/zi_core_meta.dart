@@ -8,11 +8,13 @@ const String ziCoreVersion = 'v0.1.0 - stable';
 const String ziCoreChannel = 'master - beta';
 const String ziCoreAuthor = 'AmmarDev99';
 
-String ziCoreHealth() {
-  return 'connected: $ziCoreName | $ziCoreVersion also available [$ziCoreChannel] | by $ziCoreAuthor';
+String ziCoreHealth([String? branch]) {
+  return 'connected: $ziCoreName | ${branch == null ? ziCoreVersion : ziCoreChannel} | by $ziCoreAuthor';
 }
 
-Widget ziCoreHealthShow() {
+Widget ziCoreHealthShow([String? branch]) {
   return Text(
-      'connected: $ziCoreName | $ziCoreVersion also available [$ziCoreChannel] | by $ziCoreAuthor');
+    'connected: $ziCoreName | ${branch == null ? ziCoreVersion : ziCoreChannel} | by $ziCoreAuthor',
+    textAlign: TextAlign.center,
+  );
 }
