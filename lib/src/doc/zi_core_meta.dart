@@ -4,10 +4,19 @@ import 'package:flutter/widgets.dart';
 
 /// DO NOT CHANGE WITHOUT VERSION TAG
 const String ziCoreName = 'zi_core';
+const String ziCoreAuthor = 'Ammar Shafiq - +92 342 4264494';
+const String ziCoreTagDate = 'zi_core';
+const String ziCoreBuild = '1';
+
+// updaet on every push
+const String ziCorePushDate = '6 Feb 26 - 11:40pm';
+const String ziCorePush = '4';
+const String ziCoreBeta = '0.1.1 ($ziCorePush) Beta';
+const String latestCommit = 'feat: add media - images components';
+
+// updaet on every version publish
 const String ziCoreVersion = '0.1.0';
-const String ziCoreChannel = '0.1.1 Beta';
-const String ziCoreAuthor = 'AmmarDev99';
-const String ziCorePatch =  '$ziCoreChannel - Fixed export paths & health meta layer';
+const String ziCorePatch = '$ziCoreBeta - $latestCommit';
 
 // Init
 void ziCoreInit() {
@@ -35,7 +44,7 @@ String ziCoreHealth({ZiCoreHealthType type = ZiCoreHealthType.full}) {
     case ZiCoreHealthType.version:
       return ziCoreVersion;
     case ZiCoreHealthType.channel:
-      return ziCoreChannel;
+      return ziCoreBeta;
     case ZiCoreHealthType.author:
       return ziCoreAuthor;
     case ZiCoreHealthType.patch:
@@ -45,7 +54,7 @@ String ziCoreHealth({ZiCoreHealthType type = ZiCoreHealthType.full}) {
               [ZI_CORE Connected]
               name: $ziCoreName
               version: $ziCoreVersion
-              channel: $ziCoreChannel
+              channel: $ziCoreBeta
               patch: $ziCorePatch
               author: $ziCoreAuthor
               ''';

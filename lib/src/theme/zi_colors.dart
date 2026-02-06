@@ -15,10 +15,10 @@ class ZiColors {
   static Color get primary => _override?.primary ?? const Color(0xFF237D9B);
   static Color get secondary => _override?.secondary ?? const Color(0xFF1C647C);
   static Color tertiary = _override?.secondary ?? Color(0xFF239B7F);
-// ZiAdopted Blend light and dark tone
-  static Color accent = ZiAdoptColor.light(primary, 85);
-  static Color primarySoft = ZiAdoptColor.light(primary, 60);
-  static Color primaryDark = ZiAdoptColor.dark(primary, 60);
+// ZiAdopted Blend light and dark tone - can be overide
+  static Color get accent => _override?.accent ??ZiAdoptColor.light(primary, 85);
+  static Color get primarySoft => _override?.primarySoft?? ZiAdoptColor.light(primary, 60);
+  static Color get primaryDark => _override?.primaryDark?? ZiAdoptColor.dark(primary, 60);
 
   // =========================
   // Gradients

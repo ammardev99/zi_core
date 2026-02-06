@@ -9,4 +9,7 @@ export 'widgets/zi_widgets_io.dart';
 // Logic & Utils Layer
 export 'utils/zi_utils_io.dart';
 
+//Media
+export './media/media_io.dart';
+
 ///////

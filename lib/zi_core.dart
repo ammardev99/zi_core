@@ -12,6 +12,9 @@ export './src/widgets/zi_widgets_io.dart';
 // Logic & Utils Layer
 export './src/utils/zi_utils_io.dart';
 
+// Media
+export './src/media/media_io.dart';
+
 // flutter Packages
 export './src/packages_io.dart';
 
