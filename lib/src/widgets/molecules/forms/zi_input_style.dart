@@ -42,8 +42,8 @@ class ZiInputStyle {
     borderColor: ZiColors.inputBorder,
     focusColor: ZiColors.inputFocused,
     errorColor: ZiColors.inputError,
-    labelStyle: ZiTextStyles.inputLabel,
-    hintStyle: ZiTextStyles.inputHint,
-    textStyle: ZiTextStyles.input,
+    labelStyle: ZiTypoStyles.inputLabel,
+    hintStyle: ZiTypoStyles.inputHint,
+    textStyle: ZiTypoStyles.input,
   );
 }

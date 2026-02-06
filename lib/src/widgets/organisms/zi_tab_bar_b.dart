@@ -16,7 +16,7 @@ class ZiTabBarB extends StatelessWidget {
       indicatorColor: ZiColors.primary,
       labelColor: ZiColors.primary,
       unselectedLabelColor: ZiColors.gray,
-      labelStyle: ZiTextStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold),
+      labelStyle: ZiTypoStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold),
     );
   }
 }

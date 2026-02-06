@@ -1,0 +1,4 @@
+enum ZiNativeBottomBarType {
+  fixed,
+  shifting,
+}

@@ -26,28 +26,29 @@ class ZiButtonBPrimary extends StatelessWidget {
     final bgColor = style?.backgroundColor ?? ZiColors.primary;
     final fgColor = style?.foregroundColor ?? ZiColors.surface;
 
-    final buttonChild =
-        loading
-            ? SizedBox(
-              width: 20,
-              height: 20,
-              child: CircularProgressIndicator(strokeWidth: 2, color: fgColor),
-            )
-            : Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                if (icon != null) icon!,
-                if (icon != null && label != null) const SizedBox(width: 8),
-                if (label != null)
-                  Text(
-                    label!,
-                    style:
-                        style?.textStyle ??
-                        TextStyle(color: fgColor, fontSize: 14),
-                  ),
-              ],
-            );
+    final buttonChild = loading
+        ? SizedBox(
+            width: 20,
+            height: 20,
+            child: CircularProgressIndicator(strokeWidth: 2, color: fgColor),
+          )
+        : Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (icon != null) icon!,
+              if (icon != null && label != null) const SizedBox(width: 8),
+              if (label != null)
+                Text(
+                  label!,
+                  style: style?.textStyle ??
+                      TextStyle(
+                          color: fgColor,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500),
+                ),
+            ],
+          );
 
     return SizedBox(
       width: expand ? double.infinity : style?.width,

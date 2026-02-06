@@ -14,7 +14,7 @@ class ZiSectionTag extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: marginV, horizontal: 4),
-      child: Text(title, style: ZiTextStyles.tag),
+      child: Text(title, style: ZiTypoStyles.tag),
     );
   }
 }

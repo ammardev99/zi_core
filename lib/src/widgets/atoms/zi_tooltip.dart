@@ -17,7 +17,7 @@ class ZiTooltip extends StatelessWidget {
         color: ZiColors.black.withValues(alpha: 0.8),
         borderRadius: BorderRadius.circular(ZiRadius.sm),
       ),
-      textStyle: ZiTextStyles.caption.copyWith(color: ZiColors.white),
+      textStyle: ZiTypoStyles.caption.copyWith(color: ZiColors.white),
       child: child,
     );
   }

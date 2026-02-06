@@ -23,7 +23,7 @@ class ZiInputLayout {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(label, style: ZiTextStyles.inputLabel),
+          Text(label, style: ZiTypoStyles.inputLabel),
           const SizedBox(height: 6),
           field,
         ],

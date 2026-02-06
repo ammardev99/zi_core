@@ -12,7 +12,7 @@ class ZiChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Chip(
-      label: Text(label, style: ZiTextStyles.caption.copyWith(color: ZiColors.white)),
+      label: Text(label, style: ZiTypoStyles.caption.copyWith(color: ZiColors.white)),
       backgroundColor: color ?? ZiColors.primary,
       deleteIcon: onDelete != null ? const Icon(Icons.close, size: 14, color: ZiColors.white) : null,
       onDeleted: onDelete,

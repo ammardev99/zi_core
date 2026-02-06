@@ -1,0 +1,4 @@
+enum ZiNativeBottomBarVariant {
+  iconOnly,
+  iconWithLabel,
+}

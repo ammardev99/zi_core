@@ -7,8 +7,7 @@ const String ziCoreName = 'zi_core';
 const String ziCoreVersion = '0.1.0';
 const String ziCoreChannel = '0.1.1 Beta';
 const String ziCoreAuthor = 'AmmarDev99';
-const String ziCorePatch =
-    '$ziCoreChannel - Fixed export paths & health meta layer';
+const String ziCorePatch =  '$ziCoreChannel - Fixed export paths & health meta layer';
 
 // Init
 void ziCoreInit() {

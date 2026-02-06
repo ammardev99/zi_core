@@ -19,13 +19,13 @@ class ZiSectionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: ZiTextStyles.subHeading),
+        Text(title, style: ZiTypoStyles.subHeading),
         if (onActionTap != null)
           TextButton(
             onPressed: onActionTap,
             child: Text(
               actionLabel ?? "See All",
-              style: ZiTextStyles.caption.copyWith(color: ZiColors.primary),
+              style: ZiTypoStyles.caption.copyWith(color: ZiColors.primary),
             ),
           ),
       ],

@@ -1,27 +1,35 @@
 import 'package:flutter/material.dart';
+import 'zi_theme_io.dart';
 
 class ZiColors {
   ZiColors._();
+  // Overide
+  static ZiColorOverrides? _override;
+  static void override(ZiColorOverrides overrides) {
+    _override = overrides;
+  }
+
   // =========================
   // Brand Core
   // =========================
-  static const Color primary = Color(0xFF237D9B);
-  static const Color primaryDark = Color(0xFF1C647C);
-  static const Color primarySoft = Color(0xFFDEEBF0);
-  static const Color secondary = Color(0xFF1C647C);
-  static const Color tertiary = Color(0xFF239B7F);
-  static const Color accent = primarySoft;
+  static Color get primary => _override?.primary ?? const Color(0xFF237D9B);
+  static Color get secondary => _override?.secondary ?? const Color(0xFF1C647C);
+  static Color tertiary = _override?.secondary ?? Color(0xFF239B7F);
+// ZiAdopted Blend light and dark tone
+  static Color accent = ZiAdoptColor.light(primary, 85);
+  static Color primarySoft = ZiAdoptColor.light(primary, 60);
+  static Color primaryDark = ZiAdoptColor.dark(primary, 60);
 
   // =========================
   // Gradients
   // =========================
-  static const LinearGradient gradientLR = LinearGradient(
+  static LinearGradient gradientLR = LinearGradient(
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
-    colors: [primary, primaryDark],
+    colors: [primary, primaryDark], // error here Invalid constant value
   );
 
-  static const LinearGradient gradientTB = LinearGradient(
+  static LinearGradient gradientTB = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [primary, primaryDark],
@@ -45,7 +53,9 @@ class ZiColors {
   // =========================
   // Text
   // =========================
+  @Deprecated("use text dark not textPrimary ")
   static const Color textPrimary = Color(0xFF1A1A1A);
+  static const Color textDark = Color(0xFF404040);
   static const Color textSecondary = Color(0xFF5F6B75);
   static const Color heading = Color(0xFF525252);
   static const Color text = Color(0xFF5C5E64);
@@ -67,7 +77,7 @@ class ZiColors {
   static const Color inputBackground = white;
   static const Color inputFilledBackground = Color(0xFFF2F6F9);
   static const Color inputBorder = border;
-  static const Color inputFocused = primary;
+  static Color inputFocused = primary;
   static const Color inputText = textPrimary;
   static const Color inputHint = textMuted;
   static const Color inputError = error;
@@ -78,7 +88,7 @@ class ZiColors {
   // =========================
   static const Color onPrimary = white;
   static const Color onSecondary = white;
-  static const Color onAccent = primary;
+  static Color onAccent = primary;
   static const Color onSurface = textPrimary;
 
   // =========================

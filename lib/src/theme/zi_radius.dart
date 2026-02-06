@@ -10,6 +10,11 @@ class ZiRadius {
   static const double xl = 24;
   static const double full = 999;
 
+  // Media
+  static const double mediaBanner6 = 6;
+  static const double mediaCard8 = 8;
+  static const double media100 = 100;
+
   // Component aliases (NO logic here)
   static const double button = sm;
   static const double card = lg;

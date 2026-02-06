@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../zi_core_io.dart';
 
-class ZiTextStyles {
-  ZiTextStyles._();
+class ZiTypoStyles {
+  ZiTypoStyles._();
 
   // =========================
   // Display (Marketing / Hero)
@@ -43,20 +43,33 @@ class ZiTextStyles {
 //     fontWeight: FontWeight.w600,
 //     color: ZiColors.textPrimary,
 //   );
-
+  static const TextStyle titleSm = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: ZiColors.textPrimary,
+  );
+  static const TextStyle titleMd = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: ZiColors.textPrimary,
+  );
+  static const TextStyle titleLg = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: ZiColors.textPrimary,
+  );
+  static const TextStyle titleXl = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    color: ZiColors.textPrimary,
+  );
+  @Deprecated('user titleMd not titleMedium')
   static const TextStyle titleMedium = TextStyle(
     fontSize: 18,
     height: 1.35,
     fontWeight: FontWeight.w600,
     color: ZiColors.textPrimary,
   );
-
-//   static const TextStyle titleSmall = TextStyle(
-//     fontSize: 16,
-//     height: 1.4,
-//     fontWeight: FontWeight.w500,
-//     color: ZiColors.textPrimary,
-//   );
 
 //   // =========================
 //   // Body (Primary reading)
@@ -88,6 +101,11 @@ class ZiTextStyles {
   static const TextStyle labelLarge = TextStyle(
     fontSize: 14,
     height: 1.2,
+    fontWeight: FontWeight.w600,
+    color: ZiColors.textWhite,
+  );
+  static const TextStyle button = TextStyle(
+    fontSize: 14,
     fontWeight: FontWeight.w600,
     color: ZiColors.textWhite,
   );

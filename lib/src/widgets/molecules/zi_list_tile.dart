@@ -22,8 +22,8 @@ class ZiListTile extends StatelessWidget {
     return ListTile(
       onTap: onTap,
       leading: leading,
-      title: Text(title, style: ZiTextStyles.subHeading.copyWith(fontSize: 16)),
-      subtitle: subtitle != null ? Text(subtitle!, style: ZiTextStyles.caption) : null,
+      title: Text(title, style: ZiTypoStyles.subHeading.copyWith(fontSize: 16)),
+      subtitle: subtitle != null ? Text(subtitle!, style: ZiTypoStyles.caption) : null,
       trailing: trailing ?? const Icon(Icons.chevron_right, color: ZiColors.grayLight),
       contentPadding: ZiSpacing.mediumPadding,
     );

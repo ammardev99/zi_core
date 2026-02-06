@@ -14,12 +14,22 @@ Latest Version is  `0.1.0`
 
 > Zi_Architechture
 
+- a widget with zi_name_ {style, type, get_name, zi_name, variant}
 - zi_name_style     // can follow same design system or override by pass call time
 - zi_name_type      // can use in diffrent varients
 - zi_get_name       // used to get base in cases
-- zi_name       // get used by main public widget
+- zi_name           // get used by main public widget
 - zi_name_variant   // can be diffrent layout
+
+- zi_<'name'>/
+ ├── zi_<'name'>.dart              // public widget
+ ├── zi_<'name'>_style.dart        // styles (theme-based / override)
+ ├── zi_<'name'>_type.dart         // enums / behavior types
+ ├── zi_<'name'>_variant.dart      // layout variants
+ ├── zi_<'name'>_get.dart          // internal resolver / mapper
+
 architecture → consistency = maintainability.
+
 - Visual
 - Layout
 - Behavior
