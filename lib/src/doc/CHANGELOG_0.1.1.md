@@ -23,24 +23,14 @@ Status: IN PROGRESS
 
 ## 🚧 Planned (To Be Added) – v0.1.1
 
-### 1. Core Architecture & Standards
-
-- [ ] Enforce standard widget structure:
-  - `zi_<name>.dart`
-  - `zi_<name>_style.dart`
-  - `zi_<name>_type.dart`
-  - `zi_<name>_variant.dart`
-  - `zi_<name>_get.dart`
-- [ ] Separation of concerns: Visual / Layout / Behavior
-
----
-
 ### 6. ZiInput Enhancements
 
+>
 - [ ] `maxLines` support for description / notes
-- [ ] Expandable input for long text
+>
+- [ ] Expandable input for long text like description/notes
 - [ ] Centralized `obscureText` handling
-- [ ] Address / description input variants
+- [ ] Address / description use case
 - [ ] Label size scaling support
 
 ---
@@ -57,11 +47,11 @@ Status: IN PROGRESS
 
 ### 8. Dialogs, Sheets & Alerts
 
-- [ ] `ZiAlertDialog`
-- [ ] `ZiBottomSheet`
-- [ ] `ZiElevatedActionDialog`
-- [ ] Forgot-password dialog using ZiAlertDialog
-- [ ] Remove raw `AlertDialog` usage in core
+- [@] `ZiAlertDialog`
+- [@] `ZiBottomSheet`
+- [@] `ZiElevatedActionDialog`
+- [@] Forgot-password dialog using ZiAlertDialog
+- [@] Remove raw `AlertDialog` usage in core
 
 ---
 
@@ -96,41 +86,10 @@ Status: IN PROGRESS
 - Keep architecture extensible
 >
 
-### 15. Theme & Color Override
+### 1. Core Architecture & Standards
 
-- [ ] `ZiColors.override(AppColors)`
-- [ ] Sync Zi theme with host app theme
-
-- [@] Menu tile label color theming
-- [@] Dark icon & text color consistency
-
----
-
-### 10. Bottom Navigation System
-
-- [ ] Native Flutter bottom bar (`ZiBottomBar_native`)
-- [ ] Support Fixed & Shifting types
-- [ ] Icon-only & Icon+Label layouts
-- [ ] Dark / Light theme support
-- [ ] Badge overlay support
-- [ ] Center FAB compatibility
-
----
-
-### 14. Share, URL & Toast Actions
-
-- [ ] `ZiTapActionType.share` (text / image / link / combined)
-- [ ] URL opening utility
-- [ ] Toast on tap actions
-
----
-
-### 9. Navigation System
-
-- [ ] `ZiNavigator` abstraction
-- [ ] Push / Replace / Clear-stack navigation
-- [ ] Page transition support
-- [ ] GetX-like API (without dependency)
+- Enforce standard widget structure:
+- Separation of concerns: Visual / Layout / Behavior
 
 ---
 
@@ -150,6 +109,43 @@ Status: IN PROGRESS
 - Standard spacing scale (6, 10, 12, 16, 20, 24)
 - [@] Keyboard-safe scrolling
 - [@] Keyboard dismiss on drag
+
+### 10. Bottom Navigation System
+
+- [ ] Native Flutter bottom bar (`ZiBottomBar_native`)
+- [ ] Support Fixed & Shifting types
+- [ ] Icon-only & Icon+Label layouts
+- [ ] Dark / Light theme support
+- [ ] Badge overlay support
+- [ ] Center FAB compatibility
+
+---
+
+### 9. Navigation System
+
+- [ ] `ZiNavigator` abstraction
+- [ ] Push / Replace / Clear-stack navigation
+- [ ] Page transition support
+- [ ] GetX-like API (without dependency)
+
+---
+
+### 14. Share, URL & Toast Actions
+
+- [ ] `ZiTapActionType.share` (text / image / link / combined)
+- [ ] URL opening utility
+- [ ] Toast on tap actions
+
+### 15. Theme & Color Override
+
+- [ ] `ZiColors.override(AppColors)`
+- [ ] Sync Zi theme with host app theme
+
+- [@] Menu tile label color theming
+- [@] Dark icon & text color consistency
+
+---
+
 >
 
 ---

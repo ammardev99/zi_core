@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../zi_widgets_io.dart';
 
-// TODO: Use Native Bottom bar
 class ZiNativeBottomBar extends StatelessWidget {
   final int currentIndex;
   final List<BottomNavigationBarItem> items;

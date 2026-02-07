@@ -46,29 +46,29 @@ class ZiTypoStyles {
   static const TextStyle titleSm = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark,
   );
   static const TextStyle titleMd = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark,
   );
   static const TextStyle titleLg = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark,
   );
   static const TextStyle titleXl = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.w600,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark,
   );
   @Deprecated('user titleMd not titleMedium')
   static const TextStyle titleMedium = TextStyle(
     fontSize: 18,
     height: 1.35,
     fontWeight: FontWeight.w600,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark
   );
 
 //   // =========================
@@ -134,7 +134,7 @@ class ZiTypoStyles {
     fontSize: 15,
     height: 1.45,
     fontWeight: FontWeight.w400,
-    color: ZiColors.textPrimary,
+    color: ZiColors.textDark,
   );
 
   static const TextStyle inputHint = TextStyle(
@@ -164,6 +164,6 @@ class ZiTypoStyles {
 //   // =========================
 //   // Legacy / Compatibility
 //   // =========================
-  static const TextStyle subHeading = titleMedium;
+  static const TextStyle subHeading = titleMd;
   static const TextStyle tag = caption;
 }

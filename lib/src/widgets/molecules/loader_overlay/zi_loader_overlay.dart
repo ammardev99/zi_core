@@ -146,7 +146,7 @@ class _OverlayContent extends StatelessWidget {
               const SizedBox(height: 12),
               Text(
                 message!,
-                style: ZiTypoStyles.titleMedium,
+                style: ZiTypoStyles.titleMd,
                 textAlign: TextAlign.center,
               ),
             ],

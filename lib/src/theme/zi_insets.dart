@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'zi_spacing.dart';
+import 'sizing/zi_spacing.dart';
 
 class ZiInsets {
   ZiInsets._();

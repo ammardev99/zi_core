@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../theme/zi_colors.dart';
-import '../../theme/zi_spacing.dart';
+import '../../theme/sizing/zi_spacing.dart';
 
 class ZiDivider extends StatelessWidget {
   final double thickness;

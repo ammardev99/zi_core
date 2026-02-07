@@ -1,3 +1,4 @@
+@Deprecated("use ZiSizes.IconSize not ZiIconSize")
 class ZiIconSizes {
   ZiIconSizes._();
 

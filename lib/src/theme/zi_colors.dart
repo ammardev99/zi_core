@@ -78,7 +78,7 @@ class ZiColors {
   static const Color inputFilledBackground = Color(0xFFF2F6F9);
   static const Color inputBorder = border;
   static Color inputFocused = primary;
-  static const Color inputText = textPrimary;
+  static const Color inputText = textDark;
   static const Color inputHint = textMuted;
   static const Color inputError = error;
   static const Color inputDisabled = disabled;
@@ -89,7 +89,7 @@ class ZiColors {
   static const Color onPrimary = white;
   static const Color onSecondary = white;
   static Color onAccent = primary;
-  static const Color onSurface = textPrimary;
+  static const Color onSurface = textDark;
 
   // =========================
   // Debug (Dev Only)
